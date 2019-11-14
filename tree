@@ -1,0 +1,6 @@
+DIR=${1:-`pwd`}
+SPACING=${2:-|} 
+cd $DIR 
+for x in * ; do
+  [ -d $DIR/$x ] && echo "$SPACING\`-{"$x && $0 $DIR/$x "$SPACING "
+  done
